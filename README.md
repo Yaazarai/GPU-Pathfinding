@@ -1,6 +1,6 @@
 # GPU-Pathfinding
-Radiosity-Based GPU path finding using modified Global Illumination techniques.
+Radiosity-Based GPU distance/vewctor field for pathfinding using modified Global Illumination techniques.
 
 <p align="center">
-  <img src="https://i.imgur.com/jUjCsgg.gif" />
+  <img src="https://i.imgur.com/kXftpc0.gif" />
 </p>
