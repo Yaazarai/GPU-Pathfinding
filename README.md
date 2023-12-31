@@ -4,6 +4,10 @@ Radiosity-Based GPU distance/vewctor field for pathfinding using modified Global
 <p align="center">
   <img src="https://i.imgur.com/kXftpc0.gif" />
 </p>
+Resolves closed corridors like A* as well:
+<p align="center">
+  <img src="https://i.imgur.com/QiD7znN.gif" />
+</p>
 
 ### Radiosity Based GPU Pathfinding
 The goal of this pathfinding method is to leverage the GPU for pathfinding tasks, usually when you have a low GPU overhead and a high CPU overhead. This is a radiosity-based method, mimicking GI using its wave propogation properties. Instead of spreading light throughout the scene we spread out the "nearest distance" to the target. This is performed in passes using jumpflooding.
