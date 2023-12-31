@@ -10,7 +10,7 @@ Resolves closed corridors like A* as well:
 </p>
 
 ### Radiosity Based GPU Pathfinding
-The goal of this pathfinding method is to leverage the GPU for pathfinding tasks, usually when you have a low GPU overhead and a high CPU overhead. This is a radiosity-based method, mimicking GI using its wave propogation properties. Instead of spreading light throughout the scene we spread out the "nearest distance" to the target. This is performed in passes using jumpflooding.
+The goal of this pathfinding method is to leverage the GPU for pathfinding tasks, usually when you have a low GPU overhead and a high CPU overhead. This is a radiosity-based method, mimicking GI using its wave propogation properties. Instead of spreading light throughout the scene we spread out the "nearest distance" to the target. This is performed in passes using jumpflooding. Pleasec note that the method is designed to only handle 4-rays per pixel for path resolution specifically for the `Shd_VectorField` pass.
 
 Here are the steps:
 ```
